@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://cppy27qux61oj"]
+[gd_scene load_steps=23 format=3 uid="uid://cppy27qux61oj"]
 
 [ext_resource type="PackedScene" uid="uid://0lfukth4fm6g" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/scene/elements/player_drone.tscn" id="1_kvqs0"]
 [ext_resource type="Script" uid="uid://l3e6wihcg55t" path="res://packages/2025_09_15_gdp_import_assets_on_quest/script/import_on_godot_quest_assets.gd" id="2_kvqs0"]
+[ext_resource type="PackedScene" uid="uid://bhm7pxo786b2g" path="res://import_from_quest/open_brush/Untitled 1/glb/Untitled.glb" id="3_4ulsb"]
 [ext_resource type="Script" uid="uid://cdejkeyy1i2kt" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/node_restart_current_game.gd" id="3_y8jfp"]
 [ext_resource type="Script" uid="uid://b0j804ucvt7lm" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/node_quit_current_game.gd" id="4_pngd4"]
 [ext_resource type="Texture2D" uid="uid://cefqaodpgr71g" path="res://_project/from_the_web/random/human_familly/human_familly.png" id="5_i213u"]
@@ -14,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bi520lqni53uj" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_round.tscn" id="12_otmwv"]
 [ext_resource type="PackedScene" uid="uid://gdbol2lam43b" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_square.tscn" id="13_dy6mc"]
 [ext_resource type="PackedScene" uid="uid://baxbk3aflb6a2" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_glowing_stick.tscn" id="14_nbjj1"]
+[ext_resource type="Script" uid="uid://pmfxj100qs60" path="res://_project/scene/load_xr.gd" id="15_imcw7"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_kvqs0"]
 
@@ -55,6 +57,7 @@ skeleton = NodePath("../../XRController3DLeftHand")
 tracker = &"head"
 
 [node name="PlayerDrone" parent="." instance=ExtResource("1_kvqs0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.33758)
 
 [node name="Node Import From Download" type="Node" parent="."]
 
@@ -67,6 +70,7 @@ apply_to_directory = true
 script = ExtResource("2_kvqs0")
 source_relative = "Open Brush/Exports"
 res_relative = "import_from_quest/open_brush"
+import_at_ready = true
 copy_or_delete_files = 0
 apply_to_directory = true
 
@@ -200,3 +204,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08646, 0.631774, -1.57569)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBodyGround"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.326613, 0)
 shape = SubResource("BoxShape3D_kvqs0")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("15_imcw7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Untitled" parent="." instance=ExtResource("3_4ulsb")]
