@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://h28b2mt7gha8"]
+
+[ext_resource type="PackedScene" uid="uid://b357xg3k1xk8b" path="res://packages/2024_06_31_gdp_drone_race_step/models/DFlag Octogone.fbx" id="1_cnai8"]
+[ext_resource type="Texture2D" uid="uid://j2pn4j70804r" path="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Octogone.001 2.png" id="2_1cc42"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aex17"]
+shading_mode = 0
+albedo_texture = ExtResource("2_1cc42")
+
+[node name="DFlag Octogone" instance=ExtResource("1_cnai8")]
+
+[node name="DFlag Octogone_001" parent="." index="0"]
+transform = Transform3D(9.69415, 0, 0, 0, -9.69415, -1.57937e-06, 0, 1.57937e-06, -9.69415, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_aex17")

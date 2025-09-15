@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://t265cjq3n1js"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pef7f"]
+
+[node name="size_drone_20cm" type="MeshInstance3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+mesh = SubResource("BoxMesh_pef7f")

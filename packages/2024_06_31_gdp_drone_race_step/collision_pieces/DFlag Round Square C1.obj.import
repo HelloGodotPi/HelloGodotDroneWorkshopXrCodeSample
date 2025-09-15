@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dlmdiye1grl3k"
+path="res://.godot/imported/DFlag Round Square C1.obj-f6789799ba8d6a4f80f0e70d769ae317.mesh"
+
+[deps]
+
+files=["res://.godot/imported/DFlag Round Square C1.obj-f6789799ba8d6a4f80f0e70d769ae317.mesh"]
+
+source_file="res://packages/2024_06_31_gdp_drone_race_step/collision_pieces/DFlag Round Square C1.obj"
+dest_files=["res://.godot/imported/DFlag Round Square C1.obj-f6789799ba8d6a4f80f0e70d769ae317.mesh", "res://.godot/imported/DFlag Round Square C1.obj-f6789799ba8d6a4f80f0e70d769ae317.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

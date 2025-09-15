@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cwsvgqqv23c1"
+path="res://.godot/imported/PatouneLowPoly.obj-29b27c1d6f44a4084912e9ad66766b6c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/PatouneLowPoly.obj-29b27c1d6f44a4084912e9ad66766b6c.mesh"]
+
+source_file="res://packages/2024_10_02_gdp_patoune_race/3D/PatouneLowPoly.obj"
+dest_files=["res://.godot/imported/PatouneLowPoly.obj-29b27c1d6f44a4084912e9ad66766b6c.mesh", "res://.godot/imported/PatouneLowPoly.obj-29b27c1d6f44a4084912e9ad66766b6c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

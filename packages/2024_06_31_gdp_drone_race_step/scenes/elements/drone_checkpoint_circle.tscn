@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn8l3811e0j6p"]
+
+[ext_resource type="PackedScene" uid="uid://dq50dk50y54u6" path="res://packages/2024_06_31_gdp_drone_race_step/models/DFlag Circle.fbx" id="1_8k4b0"]
+[ext_resource type="Texture2D" uid="uid://cng0cchwmmyn8" path="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Circle UVo 2.png" id="2_vnkx1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8k4b0"]
+shading_mode = 0
+albedo_texture = ExtResource("2_vnkx1")
+
+[node name="DFlag Circle" instance=ExtResource("1_8k4b0")]
+
+[node name="DFlag Circle 1m_002" parent="." index="0"]
+transform = Transform3D(8.95166, 0, 0, 0, -8.95166, -2.38419e-07, 0, 2.38419e-07, -8.95166, 2.83717e-06, 0.000581648, -7.01082e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_8k4b0")

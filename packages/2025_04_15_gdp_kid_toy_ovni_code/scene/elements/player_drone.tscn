@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://0lfukth4fm6g"]
+
+[ext_resource type="Script" uid="uid://bco5ie7nq3ini" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/drone_input_to_vector2.gd" id="2_riauf"]
+[ext_resource type="PackedScene" uid="uid://w5squqreqcwt" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/scene/elements/player_ovni.tscn" id="3_ni474"]
+[ext_resource type="Script" uid="uid://y7beiex3501p" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/move_drone_from_two_joysticks.gd" id="3_rpi88"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_o370j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d7g2c"]
+size = Vector3(0.16626, 0.0849609, 0.204102)
+
+[node name="PlayerDrone" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.2, 6.04875e-06, -1.50616e-05, -2.4195e-05, 0.05, 1.32178e-05, 1.50616e-05, -3.30445e-06, 0.2, -0.00101066, -0.000609368, 0.000931382)
+visible = false
+mesh = SubResource("BoxMesh_o370j")
+
+[node name="NodeInputToVector2" type="Node" parent="."]
+script = ExtResource("2_riauf")
+
+[node name="NodeBasicDroneMove" type="Node" parent="." node_paths=PackedStringArray("what_node_to_affect")]
+script = ExtResource("3_rpi88")
+what_node_to_affect = NodePath("..")
+move_speed = 0.72
+rotation_speed = 180.0
+vertical_speed = 0.72
+
+[node name="Player OVNI" parent="." instance=ExtResource("3_ni474")]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 6.31672e-12, 7.27596e-12, 7.53131e-12, 1, 7.27596e-12, 0, 0, 1, 0, 5.82077e-11, -5.82077e-11)
+shape = SubResource("BoxShape3D_d7g2c")
+
+[connection signal="on_input_processed" from="NodeInputToVector2" to="NodeBasicDroneMove" method="set_drone_joysticks"]

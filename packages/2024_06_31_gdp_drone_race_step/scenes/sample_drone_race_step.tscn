@@ -1,0 +1,43 @@
+[gd_scene load_steps=11 format=3 uid="uid://ep8vy2etr3a7"]
+
+[ext_resource type="PackedScene" uid="uid://csaqh3ymbw8lv" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/size_1x1x1_meter.tscn" id="1_w6llo"]
+[ext_resource type="PackedScene" uid="uid://t265cjq3n1js" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/size_drone_20cm.tscn" id="2_o0c8q"]
+[ext_resource type="PackedScene" uid="uid://cn8l3811e0j6p" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_circle.tscn" id="3_ekqvs"]
+[ext_resource type="PackedScene" uid="uid://eg8sfdo6ww3g" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_ellipse.tscn" id="4_krk7o"]
+[ext_resource type="PackedScene" uid="uid://jbfu7dbl576g" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_flag.tscn" id="5_1elj7"]
+[ext_resource type="PackedScene" uid="uid://h28b2mt7gha8" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_octogone.tscn" id="6_wyp24"]
+[ext_resource type="PackedScene" uid="uid://0r1m7pcpnxij" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_pentagone.tscn" id="7_txo0h"]
+[ext_resource type="PackedScene" uid="uid://bi520lqni53uj" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_round.tscn" id="8_j0038"]
+[ext_resource type="PackedScene" uid="uid://gdbol2lam43b" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_square.tscn" id="9_hr7bb"]
+[ext_resource type="PackedScene" uid="uid://b6teguye8n06h" path="res://packages/2024_06_31_gdp_drone_race_step/glowing_stick/GlowingStick.blend" id="10_o0c8q"]
+
+[node name="SampleDroneRaceStep" type="Node3D"]
+
+[node name="size_1x1x1_meter" parent="." instance=ExtResource("1_w6llo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="size_drone" parent="." instance=ExtResource("2_o0c8q")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -1.1545, 1, 0)
+
+[node name="DFlag Circle" parent="." instance=ExtResource("3_ekqvs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.18578, 0, 0)
+
+[node name="DFlag Ellipse" parent="." instance=ExtResource("4_krk7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.37208, 0, 0)
+
+[node name="DFlag" parent="." instance=ExtResource("5_1elj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.39859, 0, 0)
+
+[node name="DFlag Octogone" parent="." instance=ExtResource("6_wyp24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.11313, 0, 0)
+
+[node name="DFlag Pentagone" parent="." instance=ExtResource("7_txo0h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2874, 0, 0)
+
+[node name="DFlag Round" parent="." instance=ExtResource("8_j0038")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.29741, 0, 0)
+
+[node name="DFlag Square" parent="." instance=ExtResource("9_hr7bb")]
+
+[node name="GlowingStick" parent="." instance=ExtResource("10_o0c8q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.06201, 0, 0.23544)

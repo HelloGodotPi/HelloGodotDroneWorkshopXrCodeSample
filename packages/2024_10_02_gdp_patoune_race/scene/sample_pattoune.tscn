@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnamyxheb4vl7"]
+
+[ext_resource type="PackedScene" uid="uid://dxkrtqs0np4y8" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/pattoune_color.tscn" id="1_ux7my"]
+[ext_resource type="PackedScene" uid="uid://bgo33w1v42jeo" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/pattoune_yellow.tscn" id="2_hknpb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ux7my"]
+
+[node name="SamplePattoune" type="Node3D"]
+
+[node name="1x1x1" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_ux7my")
+
+[node name="PattouneColor" parent="." instance=ExtResource("1_ux7my")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="PattouneYellow" parent="." instance=ExtResource("2_hknpb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)

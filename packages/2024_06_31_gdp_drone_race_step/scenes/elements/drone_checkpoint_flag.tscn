@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://jbfu7dbl576g"]
+
+[ext_resource type="PackedScene" uid="uid://xougxfkb7v55" path="res://packages/2024_06_31_gdp_drone_race_step/models/DFlag.fbx" id="1_gp0l1"]
+[ext_resource type="Texture2D" uid="uid://ddp08djq2kxme" path="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Curvy Flag 2.png" id="2_3r8ai"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mmw8w"]
+shading_mode = 0
+albedo_texture = ExtResource("2_3r8ai")
+
+[node name="DFlag" instance=ExtResource("1_gp0l1")]
+
+[node name="DFlag Curvy Flag" parent="." index="0"]
+transform = Transform3D(-31.4156, 0, -2.74644e-06, 0, 31.4156, 0, 2.74644e-06, 0, -31.4156, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_mmw8w")

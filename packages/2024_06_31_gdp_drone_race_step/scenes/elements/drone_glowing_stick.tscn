@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://baxbk3aflb6a2"]
+
+[ext_resource type="PackedScene" uid="uid://b6teguye8n06h" path="res://packages/2024_06_31_gdp_drone_race_step/glowing_stick/GlowingStick.blend" id="1_qawlj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_py0gq"]
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[node name="GlowingStick" instance=ExtResource("1_qawlj")]
+
+[node name="Glowing Stick" parent="Armature Glowing Stick/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_py0gq")

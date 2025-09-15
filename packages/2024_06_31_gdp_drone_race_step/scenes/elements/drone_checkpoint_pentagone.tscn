@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://0r1m7pcpnxij"]
+
+[ext_resource type="PackedScene" uid="uid://ojxrh67p7mfq" path="res://packages/2024_06_31_gdp_drone_race_step/models/DFlag Pentagone.fbx" id="1_nbupy"]
+[ext_resource type="Texture2D" uid="uid://chbjnvjo2nuwa" path="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Pentagone .001 2.png" id="2_x2q4f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ayja4"]
+shading_mode = 0
+albedo_texture = ExtResource("2_x2q4f")
+
+[node name="DFlag Pentagone" instance=ExtResource("1_nbupy")]
+
+[node name="DFlag Pentagone " parent="." index="0"]
+transform = Transform3D(-9.60232, 8.39461e-07, 0, 8.39461e-07, 9.60232, 8.39461e-07, 7.3388e-14, 8.39461e-07, -9.60232, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_ayja4")

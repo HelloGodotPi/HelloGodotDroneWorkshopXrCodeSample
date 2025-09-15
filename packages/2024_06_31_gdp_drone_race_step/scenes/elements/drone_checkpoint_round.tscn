@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi520lqni53uj"]
+
+[ext_resource type="PackedScene" uid="uid://cfbstj0iyetvd" path="res://packages/2024_06_31_gdp_drone_race_step/models/DFlag Round.fbx" id="1_emli8"]
+[ext_resource type="Texture2D" uid="uid://chudjauf8ivns" path="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Round Square.001 2.png" id="2_orgea"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxwsd"]
+shading_mode = 0
+albedo_texture = ExtResource("2_orgea")
+
+[node name="DFlag Round" instance=ExtResource("1_emli8")]
+
+[node name="DFlag Round Square_001" parent="." index="0"]
+transform = Transform3D(8.979, 0, 0, 0, -8.979, -7.84969e-07, 0, 7.84969e-07, -8.979, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_hxwsd")
