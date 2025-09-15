@@ -1,6 +1,6 @@
-[gd_scene load_steps=20 format=3 uid="uid://cppy27qux61oj"]
+[gd_scene load_steps=21 format=3 uid="uid://cppy27qux61oj"]
 
-[ext_resource type="PackedScene" uid="uid://bggdtykh4nrm1" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/scene/elements/player_drone_with_camera_in.tscn" id="1_kvqs0"]
+[ext_resource type="PackedScene" uid="uid://0lfukth4fm6g" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/scene/elements/player_drone.tscn" id="1_kvqs0"]
 [ext_resource type="Script" uid="uid://l3e6wihcg55t" path="res://packages/2025_09_15_gdp_import_assets_on_quest/script/import_on_godot_quest_assets.gd" id="2_kvqs0"]
 [ext_resource type="Script" uid="uid://cdejkeyy1i2kt" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/node_restart_current_game.gd" id="3_y8jfp"]
 [ext_resource type="Script" uid="uid://b0j804ucvt7lm" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/node_quit_current_game.gd" id="4_pngd4"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://gdbol2lam43b" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_square.tscn" id="13_dy6mc"]
 [ext_resource type="PackedScene" uid="uid://baxbk3aflb6a2" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_glowing_stick.tscn" id="14_nbjj1"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_lawpg"]
+[sub_resource type="SphereMesh" id="SphereMesh_kvqs0"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_kvqs0"]
 
@@ -27,13 +27,34 @@
 transparency = 1
 albedo_texture = ExtResource("5_i213u")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_kvqs0"]
+size = Vector3(20.8682, 0.623047, 26.8154)
+
 [node name="BonjourGodot" type="Node3D"]
 
-[node name="PlayerDroneWithCameraIn" parent="." instance=ExtResource("1_kvqs0")]
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
 
-[node name="Ground" type="MeshInstance3D" parent="."]
-transform = Transform3D(3.81023, 0, 0, 0, 0.325467, 0, 0, 0, 3.81023, -0.000633955, -0.153807, -0.00734895)
-mesh = SubResource("BoxMesh_lawpg")
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+
+[node name="XRController3DLeftHand" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+
+[node name="HandDebugLeft" type="MeshInstance3D" parent="XROrigin3D/XRController3DLeftHand"]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+mesh = SubResource("SphereMesh_kvqs0")
+
+[node name="XRController3DRightHand" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="HandDebugRight" type="MeshInstance3D" parent="XROrigin3D/XRController3DRightHand"]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+mesh = SubResource("SphereMesh_kvqs0")
+skeleton = NodePath("../../XRController3DLeftHand")
+
+[node name="XRController3DHead" type="XRController3D" parent="XROrigin3D"]
+tracker = &"head"
+
+[node name="PlayerDrone" parent="." instance=ExtResource("1_kvqs0")]
 
 [node name="Node Import From Download" type="Node" parent="."]
 
@@ -173,3 +194,9 @@ transform = Transform3D(0.703914, 0, 0, 0, -3.07691e-08, 0.703914, 0, -0.703914,
 
 [node name="GlowingStick" parent="ToMakeTheCircuit" instance=ExtResource("14_nbjj1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08646, 0.631774, -1.57569)
+
+[node name="StaticBodyGround" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBodyGround"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.326613, 0)
+shape = SubResource("BoxShape3D_kvqs0")
