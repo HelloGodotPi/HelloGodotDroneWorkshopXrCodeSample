@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://gdbol2lam43b"]
+[gd_scene load_steps=5 format=3 uid="uid://gdbol2lam43b"]
 
 [ext_resource type="PackedScene" uid="uid://bspe8hthn5b4u" path="res://packages/2024_06_31_gdp_drone_race_step/models/DFlag Square.fbx" id="1_7fwpm"]
 [ext_resource type="Texture2D" uid="uid://be8pksgvfna04" path="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Square.001 2.png" id="2_kcju0"]
@@ -8,8 +8,29 @@ shading_mode = 0
 specular_mode = 1
 albedo_texture = ExtResource("2_kcju0")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_skgg8"]
+size = Vector3(0.114746, 0.918945, 0.0146484)
+
 [node name="DFlag Square" instance=ExtResource("1_7fwpm")]
 
 [node name="DFlag Square_001" parent="." index="0"]
 transform = Transform3D(-9.22343, -5.68434e-14, -8.06338e-07, 5.68434e-14, 9.22343, -1.50269e-06, 8.06338e-07, -1.50269e-06, -9.22343, 0, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_buhe3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.404297, 0, 0)
+shape = SubResource("BoxShape3D_skgg8")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.401383, 0, 0)
+shape = SubResource("BoxShape3D_skgg8")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.00145672, -0.40284, 0)
+shape = SubResource("BoxShape3D_skgg8")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" index="3"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.00145676, 0.40284, 0)
+shape = SubResource("BoxShape3D_skgg8")

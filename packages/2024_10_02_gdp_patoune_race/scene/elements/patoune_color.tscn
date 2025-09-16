@@ -1,15 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://dxkrtqs0np4y8"]
 
-[ext_resource type="ArrayMesh" uid="uid://cwsvgqqv23c1" path="res://packages/2024_10_02_gdp_patoune_race/3D/PatouneLowPoly.obj" id="1_3r5kl"]
-[ext_resource type="Texture2D" uid="uid://sg7ludq5gaic" path="res://packages/2024_10_02_gdp_patoune_race/2D/PatouneWhite.png" id="2_1x24q"]
+[ext_resource type="ArrayMesh" uid="uid://cwsvgqqv23c1" path="res://packages/2024_10_02_gdp_patoune_race/3D/PatouneLowPoly.obj" id="1_7ctw5"]
+[ext_resource type="Texture2D" uid="uid://sg7ludq5gaic" path="res://packages/2024_10_02_gdp_patoune_race/2D/PatouneWhite.png" id="2_d6mgp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4f8o5"]
 shading_mode = 0
-albedo_texture = ExtResource("2_1x24q")
+albedo_texture = ExtResource("2_d6mgp")
 
 [node name="PattouneColor" type="Node3D"]
 
 [node name="Pattoune" type="MeshInstance3D" parent="."]
 transform = Transform3D(56.3024, 0, 0, 0, 56.3024, 0, 0, 0, 56.3024, 0, 0, 0)
-mesh = ExtResource("1_3r5kl")
+mesh = ExtResource("1_7ctw5")
 surface_material_override/0 = SubResource("StandardMaterial3D_4f8o5")

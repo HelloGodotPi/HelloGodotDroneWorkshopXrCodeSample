@@ -100,14 +100,14 @@ func _process_file(source: String, dest: String) -> void:
 	if size_bytes > 24 * 1024 * 1024: # 24 MB limit
 		print("Skipped (too large): ", source.get_file(), " (", size_bytes / (1024 * 1024.0), " MB )")
 		return
+
+	var err = DirAccess.copy_absolute(source, dest)
+	if err == OK:
+		print("Copied: ", source.get_file(), " (", size_bytes / (1024 * 1024.0), " MB ) → ", dest)
+	else:
+		print("Failed to copy: ", source.get_file(), " Error code: ", err)
 	
-	if copy_or_delete_files == CopyOrDeleteFiles.COPY:
-		var err = DirAccess.copy_absolute(source, dest)
-		if err == OK:
-			print("Copied: ", source.get_file(), " (", size_bytes / (1024 * 1024.0), " MB ) → ", dest)
-		else:
-			print("Failed to copy: ", source.get_file(), " Error code: ", err)
-	elif copy_or_delete_files == CopyOrDeleteFiles.DELETE:
+	if copy_or_delete_files == CopyOrDeleteFiles.DELETE:
 		var del_err = DirAccess.remove_absolute(source)
 		if del_err == OK:
 			print("Deleted source file: ", source)

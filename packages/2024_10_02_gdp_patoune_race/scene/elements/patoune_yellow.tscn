@@ -1,19 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://bgo33w1v42jeo"]
+[gd_scene load_steps=8 format=3 uid="uid://bgo33w1v42jeo"]
 
+[ext_resource type="Script" uid="uid://cryvf2my7vfi5" path="res://packages/2024_10_02_gdp_patoune_race/script/gpt_patoune_destroyer.gd" id="1_ga5kx"]
 [ext_resource type="ArrayMesh" uid="uid://cwsvgqqv23c1" path="res://packages/2024_10_02_gdp_patoune_race/3D/PatouneLowPoly.obj" id="1_gbwu7"]
 [ext_resource type="Texture2D" uid="uid://ki3v1fh6ks67" path="res://packages/2024_10_02_gdp_patoune_race/2D/Patoune.png" id="2_tkith"]
-[ext_resource type="Script" uid="uid://c5dwrsg4xy3va" path="res://packages/2024_10_02_gdp_patoune_race/script/pattoune_rotate_y.gd" id="3_f52ij"]
-[ext_resource type="Script" uid="uid://xw1bj3njfjrq" path="res://packages/2024_10_02_gdp_patoune_race/script/pattoune_disable_on_command.gd" id="4_jwem2"]
+[ext_resource type="Script" uid="uid://c5dwrsg4xy3va" path="res://packages/2024_10_02_gdp_patoune_race/script/patoune_rotate_y.gd" id="3_f52ij"]
+[ext_resource type="Script" uid="uid://xw1bj3njfjrq" path="res://packages/2024_10_02_gdp_patoune_race/script/patoune_disable_on_command.gd" id="4_jwem2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f52ij"]
 shading_mode = 0
 albedo_texture = ExtResource("2_tkith")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_f52ij"]
+radius = 0.223501
 
-[node name="PattouneYellow" type="Node3D"]
+[node name="PatouneYellow" type="Node3D"]
+script = ExtResource("1_ga5kx")
 
-[node name="Pattoune" type="MeshInstance3D" parent="."]
+[node name="Patoune" type="MeshInstance3D" parent="."]
 transform = Transform3D(56.3024, 0, 0, 0, 56.3024, 0, 0, 0, 56.3024, 0, 0, 0)
 mesh = ExtResource("1_gbwu7")
 skeleton = NodePath("../..")
@@ -29,4 +32,5 @@ shape = SubResource("SphereShape3D_f52ij")
 script = ExtResource("4_jwem2")
 what_to_destroy = NodePath("..")
 
+[connection signal="area_entered" from="Area3D" to="CallDisable" method="request_to_disable"]
 [connection signal="body_entered" from="Area3D" to="CallDisable" method="request_to_disable"]
