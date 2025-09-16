@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cefqaodpgr71g"
-path.etc2="res://.godot/imported/human_familly.png-b338c58eda0658be35370d6dea7405dc.etc2.ctex"
+path.s3tc="res://.godot/imported/human_familly.png-b338c58eda0658be35370d6dea7405dc.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://_project/from_the_web/random/human_familly/human_familly.png"
-dest_files=["res://.godot/imported/human_familly.png-b338c58eda0658be35370d6dea7405dc.etc2.ctex"]
+dest_files=["res://.godot/imported/human_familly.png-b338c58eda0658be35370d6dea7405dc.s3tc.ctex"]
 
 [params]
 

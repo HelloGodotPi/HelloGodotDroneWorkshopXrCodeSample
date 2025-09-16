@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmu6vbuwrylyv"
-path.etc2="res://.godot/imported/Brush_Light-2241cd32-8ba2-48a5-9ee7-2caef7e9ed62-v10.0-MainTex.png-19ccd9a5f169aceb1a16b9c6bb4d638b.etc2.ctex"
+path.s3tc="res://.godot/imported/Brush_Light-2241cd32-8ba2-48a5-9ee7-2caef7e9ed62-v10.0-MainTex.png-19ccd9a5f169aceb1a16b9c6bb4d638b.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://import_from_quest/open_brush/Untitled 1/glb/Brush_Light-2241cd32-8ba2-48a5-9ee7-2caef7e9ed62-v10.0-MainTex.png"
-dest_files=["res://.godot/imported/Brush_Light-2241cd32-8ba2-48a5-9ee7-2caef7e9ed62-v10.0-MainTex.png-19ccd9a5f169aceb1a16b9c6bb4d638b.etc2.ctex"]
+dest_files=["res://.godot/imported/Brush_Light-2241cd32-8ba2-48a5-9ee7-2caef7e9ed62-v10.0-MainTex.png-19ccd9a5f169aceb1a16b9c6bb4d638b.s3tc.ctex"]
 
 [params]
 

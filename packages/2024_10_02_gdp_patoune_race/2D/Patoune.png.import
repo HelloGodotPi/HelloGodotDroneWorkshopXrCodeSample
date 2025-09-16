@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ki3v1fh6ks67"
-path.etc2="res://.godot/imported/Patoune.png-5047d32568f6b0d4579199f30ce8f996.etc2.ctex"
+path.s3tc="res://.godot/imported/Patoune.png-5047d32568f6b0d4579199f30ce8f996.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://packages/2024_10_02_gdp_patoune_race/2D/Patoune.png"
-dest_files=["res://.godot/imported/Patoune.png-5047d32568f6b0d4579199f30ce8f996.etc2.ctex"]
+dest_files=["res://.godot/imported/Patoune.png-5047d32568f6b0d4579199f30ce8f996.s3tc.ctex"]
 
 [params]
 

@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be8pksgvfna04"
-path.etc2="res://.godot/imported/DFlag Square.001 2.png-1ec94a9a4df55808799f6f737543b279.etc2.ctex"
+path.s3tc="res://.godot/imported/DFlag Square.001 2.png-1ec94a9a4df55808799f6f737543b279.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Square.001 2.png"
-dest_files=["res://.godot/imported/DFlag Square.001 2.png-1ec94a9a4df55808799f6f737543b279.etc2.ctex"]
+dest_files=["res://.godot/imported/DFlag Square.001 2.png-1ec94a9a4df55808799f6f737543b279.s3tc.ctex"]
 
 [params]
 

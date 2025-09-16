@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddp08djq2kxme"
-path.etc2="res://.godot/imported/DFlag Curvy Flag 2.png-93ce639481b6905f6e959e0917aeef14.etc2.ctex"
+path.s3tc="res://.godot/imported/DFlag Curvy Flag 2.png-93ce639481b6905f6e959e0917aeef14.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://packages/2024_06_31_gdp_drone_race_step/texture_uv/DFlag Curvy Flag 2.png"
-dest_files=["res://.godot/imported/DFlag Curvy Flag 2.png-93ce639481b6905f6e959e0917aeef14.etc2.ctex"]
+dest_files=["res://.godot/imported/DFlag Curvy Flag 2.png-93ce639481b6905f6e959e0917aeef14.s3tc.ctex"]
 
 [params]
 
