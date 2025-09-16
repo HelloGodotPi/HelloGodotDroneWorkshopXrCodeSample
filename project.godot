@@ -10,10 +10,17 @@ config_version=5
 
 [application]
 
-config/name="EloiGodotLaboratory_QuestNoXR"
+config/name="Hello Drone XR Workshop"
+config/description="Hey hey ;)"
 run/main_scene="uid://cppy27qux61oj"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=512
+window/size/viewport_height=512
+window/size/borderless=true
 
 [input]
 
