@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Hello Drone XR Workshop"
 config/description="Hey hey ;)"
-run/main_scene="uid://cppy27qux61oj"
+run/main_scene="uid://c35hgowrpu77h"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
