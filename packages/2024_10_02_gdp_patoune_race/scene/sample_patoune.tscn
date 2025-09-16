@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dnamyxheb4vl7"]
 
-[ext_resource type="PackedScene" uid="uid://dxkrtqs0np4y8" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/pattoune_color.tscn" id="1_ux7my"]
-[ext_resource type="PackedScene" uid="uid://bgo33w1v42jeo" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/pattoune_yellow.tscn" id="2_hknpb"]
+[ext_resource type="PackedScene" uid="uid://dxkrtqs0np4y8" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/patoune_color.tscn" id="1_ux7my"]
+[ext_resource type="PackedScene" uid="uid://bgo33w1v42jeo" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/patoune_yellow.tscn" id="2_hknpb"]
+
 
 [sub_resource type="BoxMesh" id="BoxMesh_ux7my"]
 

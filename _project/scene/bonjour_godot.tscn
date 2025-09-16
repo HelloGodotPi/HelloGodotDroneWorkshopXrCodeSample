@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://cdejkeyy1i2kt" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/node_restart_current_game.gd" id="3_y8jfp"]
 [ext_resource type="Script" uid="uid://b0j804ucvt7lm" path="res://packages/2025_04_15_gdp_kid_toy_ovni_code/script/node_quit_current_game.gd" id="4_pngd4"]
 [ext_resource type="Texture2D" uid="uid://cefqaodpgr71g" path="res://_project/from_the_web/random/human_familly/human_familly.png" id="5_i213u"]
-[ext_resource type="PackedScene" uid="uid://bgo33w1v42jeo" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/pattoune_yellow.tscn" id="5_y8jfp"]
+[ext_resource type="PackedScene" uid="uid://bgo33w1v42jeo" path="res://packages/2024_10_02_gdp_patoune_race/scene/elements/patoune_yellow.tscn" id="5_y8jfp"]
 [ext_resource type="PackedScene" uid="uid://cn8l3811e0j6p" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_circle.tscn" id="7_kvqs0"]
 [ext_resource type="PackedScene" uid="uid://eg8sfdo6ww3g" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_ellipse.tscn" id="8_imcw7"]
 [ext_resource type="PackedScene" uid="uid://jbfu7dbl576g" path="res://packages/2024_06_31_gdp_drone_race_step/scenes/elements/drone_checkpoint_flag.tscn" id="9_4ulsb"]
@@ -46,63 +46,54 @@ apply_to_directory = true
 script = ExtResource("2_kvqs0")
 source_relative = "Open Brush/Exports"
 res_relative = "import_from_quest/open_brush"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportOpenBlockFolder" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = "Blocks/OfflineModels/"
 res_relative = "import_from_quest/OpenBlocks"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportPolySketchFolder" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = "Documents/Polysketch/Exports"
 res_relative = "import_from_quest/Polysketch"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportGravitySketchFolder" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = "Gravity Sketch/Exported Sketches"
 res_relative = "import_from_quest/gravity_sketch"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportKingSpray" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = "Blocks/OfflineModels/"
 res_relative = "import_from_quest/OpenBlocks"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportPictures" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = "Pictures"
 res_relative = "import_from_quest/Pictures"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportOPaintingVR" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = "Android/data/com.Oisoi.PaintingVR/files/pictures"
 res_relative = "import_from_quest/painting_vr"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportCoco" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = "Android/data/com.ChickenTractor.Coco/files/spaces"
 res_relative = "import_from_quest/coco"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeImportBoxesXR" type="Node" parent="Node Import From Download"]
 script = ExtResource("2_kvqs0")
 source_relative = ""
 res_relative = "import_from_quest/boxes_xr"
-copy_or_delete_files = 0
 apply_to_directory = true
 
 [node name="NodeRestartCurrentGame" type="Node" parent="."]
@@ -113,29 +104,31 @@ script = ExtResource("4_pngd4")
 
 [node name="ToCatchInTheLevel" type="Node" parent="."]
 
-[node name="PattouneYellow" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
+[node name="PatouneYellow" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
 transform = Transform3D(0.149645, 0, 0, 0, 0.149645, 0, 0, 0, 0.149645, -1.25155, 0.705794, -1.68675)
 
-[node name="PattouneYellow2" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
+[node name="PatouneYellow2" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
 transform = Transform3D(0.149645, 0, 0, 0, 0.149645, 0, 0, 0, 0.149645, -1.48229, 0.705794, -1.68675)
 
-[node name="PattouneYellow3" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
+[node name="PatouneYellow3" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
 transform = Transform3D(0.149645, 0, 0, 0, 0.149645, 0, 0, 0, 0.149645, -1.75367, 0.705794, -1.68675)
 
-[node name="PattouneYellow4" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
+[node name="PatouneYellow4" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
 transform = Transform3D(0.149645, 0, 0, 0, 0.149645, 0, 0, 0, 0.149645, -1.97677, 0.705794, -1.68675)
 
-[node name="PattouneYellow5" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
+[node name="PatouneYellow5" parent="ToCatchInTheLevel" instance=ExtResource("5_y8jfp")]
 transform = Transform3D(0.149645, 0, 0, 0, 0.149645, 0, 0, 0, 0.149645, -2.19374, 0.705794, -1.68675)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="ToCatchInTheLevel"]
-transform = Transform3D(0.182936, 0, 0, 0, 0.182936, 0, 0, 0, 0.182936, -2.58145, 0.675323, -1.62914)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44393, 0.675323, -1.62914)
 gravity_scale = 0.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ToCatchInTheLevel/RigidBody3D"]
+transform = Transform3D(0.313265, 0, 0, 0, 0.313265, 0, 0, 0, 0.313265, 0, 0, 0)
 shape = SubResource("SphereShape3D_kvqs0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ToCatchInTheLevel/RigidBody3D"]
+transform = Transform3D(0.313265, 0, 0, 0, 0.313265, 0, 0, 0, 0.313265, 0, 0, 0)
 mesh = SubResource("SphereMesh_imcw7")
 
 [node name="Node3DHumanFamilly" type="Node3D" parent="."]
@@ -148,7 +141,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_pngd4")
 [node name="ToMakeTheCircuit" type="Node" parent="."]
 
 [node name="DFlag Circle" parent="ToMakeTheCircuit" instance=ExtResource("7_kvqs0")]
-transform = Transform3D(0.703914, 0, 0, 0, 0.703914, 0, 0, 0, 0.703914, 1.92492, 0.889171, -1.56742)
+transform = Transform3D(0.703514, 0, 0, 0, 0.703514, 0, 0, 0, 0.703514, 1.92492, 0.889171, -1.56742)
 
 [node name="DFlag Ellipse" parent="ToMakeTheCircuit" instance=ExtResource("8_imcw7")]
 transform = Transform3D(0.703914, 0, 0, 0, 0.703914, 0, 0, 0, 0.703914, 2.68269, 0.213319, -1.56742)
@@ -173,3 +166,6 @@ transform = Transform3D(0.703914, 0, 0, 0, -3.07691e-08, 0.703914, 0, -0.703914,
 
 [node name="GlowingStick" parent="ToMakeTheCircuit" instance=ExtResource("14_nbjj1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08646, 0.631774, -1.57569)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.608584, 0.775337, 0.168754, -0.752092, 0.495841, 0.434165, 0.25295, -0.391144, 0.884886, 0, 2.7714, 0)
